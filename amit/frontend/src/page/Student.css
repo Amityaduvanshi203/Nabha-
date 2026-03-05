@@ -1,0 +1,119 @@
+/* ============================= */
+/* VIDEO LIBRARY CSS */
+/* ============================= */
+
+.videos-section {
+  padding: 20px;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.video-thumbnail {
+  width: 80px;
+  height: 80px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.video-info {
+  flex: 1;
+}
+
+.video-info h4 {
+  margin: 5px 0;
+}
+
+.video-actions {
+  margin-top: 10px;
+}
+
+.video-actions button {
+  margin-right: 10px;
+}
+
+
+
+/* ============================= */
+/* NOTES SECTION CSS */
+/* ============================= */
+
+.notes-section {
+  padding: 20px;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.note-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.note-icon {
+  font-size: 35px;
+}
+
+.note-info {
+  flex: 1;
+}
+
+.note-info h4 {
+  margin: 5px 0;
+}
+
+.note-actions {
+  margin-top: 10px;
+}
+
+.note-actions button {
+  margin-right: 10px;
+}
+
+
+
+/* ============================= */
+/* BUTTON STYLE */
+/* ============================= */
+
+.download-btn,
+.watch-btn,
+.view-btn {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.download-btn:hover,
+.watch-btn:hover,
+.view-btn:hover {
+  background: #0056b3;
+}

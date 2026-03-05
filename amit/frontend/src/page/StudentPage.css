@@ -1,0 +1,785 @@
+.student-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+  padding: 20px;
+}
+
+.student-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.student-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.student-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.student-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.student-nav button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.student-nav button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.student-nav button.active {
+  background: white;
+  color: #6c5ce7;
+}
+
+.student-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-section {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.search-section input {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+}
+
+.search-section button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #6c5ce7;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.search-section button:hover {
+  background: white;
+  transform: translateY(-2px);
+}
+
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto 30px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  background: white;
+}
+
+.stat-card span {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  color: #6c5ce7;
+  margin-bottom: 5px;
+}
+
+.stat-card p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.class-selector {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.class-selector h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.class-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.class-buttons button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.class-buttons button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.class-buttons button.active {
+  background: white;
+  color: #6c5ce7;
+}
+
+.quick-links {
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.quick-links h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.link-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.link-card:hover {
+  transform: translateY(-5px);
+  background: white;
+}
+
+.link-card span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.link-card p {
+  color: #333;
+  font-weight: 500;
+  margin: 0;
+}
+
+.recent-uploads {
+  max-width: 1000px;
+  margin: 0 auto 30px;
+}
+
+.recent-uploads h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.uploads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.upload-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.upload-card:hover {
+  transform: translateY(-3px);
+  background: white;
+}
+
+.upload-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.upload-card h4 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.upload-card p {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.upload-card small {
+  color: #999;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.upload-card button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #6c5ce7;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-card button:hover {
+  background: #5f4dd8;
+  transform: translateY(-1px);
+}
+
+.announcements-section {
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.announcements-section h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.announcements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.announcement-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.announcement-card:hover {
+  transform: translateY(-2px);
+  background: white;
+}
+
+.announcement-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.announcement-content h4 {
+  color: #333;
+  margin: 0 0 5px 0;
+}
+
+.announcement-content p {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.courses-full-section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.courses-full-section h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  background: white;
+}
+
+.course-card h4 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.course-card p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6c5ce7, #a29bfe);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  color: #6c5ce7;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.course-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #6c5ce7;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.course-card button:hover {
+  background: #5f4dd8;
+  transform: translateY(-1px);
+}
+
+.assignments-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.assignments-section h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.assignments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.assignment-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.assignment-card:hover {
+  transform: translateY(-3px);
+  background: white;
+}
+
+.assignment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.assignment-header h4 {
+  color: #333;
+  margin: 0;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.submitted {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.status.graded {
+  background: #d4edda;
+  color: #155724;
+}
+
+.assignment-card p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.due-date,
+.grade {
+  color: #999;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.assignment-card button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #6c5ce7;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.assignment-card button:hover {
+  background: #5f4dd8;
+  transform: translateY(-1px);
+}
+
+.resources-section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.resources-section h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.resource-category {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.resource-category h4 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.resource-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.resource-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.resource-item:hover {
+  background: #e9ecef;
+  transform: translateY(-1px);
+}
+
+.resource-item span {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.resource-item div {
+  flex: 1;
+}
+
+.resource-item p {
+  color: #333;
+  margin: 0 0 5px 0;
+  font-weight: 500;
+}
+
+.resource-item small {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.resource-item button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 15px;
+  background: #6c5ce7;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.resource-item button:hover {
+  background: #5f4dd8;
+  transform: translateY(-1px);
+}
+
+.student-footer {
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .student-page {
+    padding: 10px;
+  }
+  
+  .student-header h1 {
+    font-size: 2rem;
+  }
+  
+  .student-nav {
+    gap: 5px;
+  }
+  
+  .student-nav button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+  
+  .search-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .search-section input,
+  .search-section button {
+    width: 100%;
+  }
+  
+  .stats-section {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .class-buttons {
+    gap: 5px;
+  }
+  
+  .class-buttons button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+  
+  .links-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+  
+  .uploads-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .courses-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .announcement-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .assignment-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+/* ============================= */
+/* VIDEO LIBRARY CSS */
+/* ============================= */
+
+.videos-section {
+  padding: 20px;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.video-thumbnail {
+  width: 80px;
+  height: 80px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.video-info {
+  flex: 1;
+}
+
+.video-info h4 {
+  margin: 5px 0;
+}
+
+.video-actions {
+  margin-top: 10px;
+}
+
+.video-actions button {
+  margin-right: 10px;
+}
+
+
+
+/* ============================= */
+/* NOTES SECTION CSS */
+/* ============================= */
+
+.notes-section {
+  padding: 20px;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.note-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.note-icon {
+  font-size: 35px;
+}
+
+.note-info {
+  flex: 1;
+}
+
+.note-info h4 {
+  margin: 5px 0;
+}
+
+.note-actions {
+  margin-top: 10px;
+}
+
+.note-actions button {
+  margin-right: 10px;
+}
+
+
+
+/* ============================= */
+/* BUTTON STYLE */
+/* ============================= */
+
+.download-btn,
+.watch-btn,
+.view-btn {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.download-btn:hover,
+.watch-btn:hover,
+.view-btn:hover {
+  background: #0056b3;
+}

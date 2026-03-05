@@ -1,0 +1,211 @@
+/* About.css */
+
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* ===== Page Wrapper ===== */
+.about-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ===== HERO SECTION ===== */
+.about-hero {
+  position: relative;
+  height: 350px;
+  background: url('/amit2.png') center/cover no-repeat;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 58, 138, 0.6);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ===== HISTORY SECTION ===== */
+.about-history {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-history h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.about-history p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* ===== VISION & MISSION ===== */
+.about-vision-mission {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.vm-card {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.vm-card h3 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.vm-card p {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ===== CAMPUS SECTION ===== */
+.about-campus {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.campus-image {
+  flex: 1 1 400px;
+}
+
+.campus-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.campus-info {
+  flex: 1 1 400px;
+}
+
+.campus-info h2 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.campus-info p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===== ACHIEVEMENTS SECTION ===== */
+.about-achievements {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-achievements h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.achievement-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.achievement-card span {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== FOOTER NOTE ===== */
+.about-footer-note {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #555;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .about-vision-mission,
+  .about-campus {
+    flex-direction: column;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+}
