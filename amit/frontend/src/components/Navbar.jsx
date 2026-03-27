@@ -10,7 +10,7 @@ function Navbar() {
       <div className="nav-container">
 
         <div className="logo">
-          <Link to="/" className="logo-link">MyCollege</Link>
+          <Link to="/" className="logo-link">A.V College</Link>
         </div>
 
         <ul className={menuOpen ? "nav-links active" : "nav-links"}>

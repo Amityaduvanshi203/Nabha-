@@ -1608,7 +1608,7 @@ const TeacherPage = () => {
                 <h4>Quick Downloads</h4>
                 <div className="quick-download-list">
                   <div className="quick-item">
-                    <span>Monthly Attendance Report</span>
+                    <span>Mcdonthly Attendance Report</span>
                     <div>
                       <button className="pdf-btn">PDF</button>
                       <button className="excel-btn">Excel</button>
